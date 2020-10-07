@@ -22,13 +22,14 @@ using namespace std;
 int main()
 {
     unsigned long int ul_resultado = 0 ;
-    unsigned long int ul_numero_k = 0  ;
+    unsigned long int ul_numero_k =  0 ;
     unsigned short int us_contador = 0 ;
 
     cout << "Este programa busca el primer numero triangular en tener mas de k divisores " <<endl;
     cout << "Ingrese por favor un numero k > 0 : ";
     cin >> ul_numero_k ;
-    for(unsigned long int  ul_iterator = 1 ; ul_iterator < std::numeric_limits<unsigned long int >::max() ; ul_iterator ++){
+
+    for(unsigned long int  ul_iterator = 1 ; ul_iterator <std::numeric_limits<unsigned long int >::max() ; ul_iterator ++){
         ul_resultado = ((ul_iterator*(ul_iterator+1))/2) ;
         us_contador=0;
         for(unsigned long int ul_divisor = 1 ; ul_divisor <= ul_resultado ; ul_divisor ++){
